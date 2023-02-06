@@ -2,7 +2,7 @@ DECLARE
    @Id int,
    @Name nvarchar(60)
   
-DECLARE s1 CURSOR FOR 
+DECLARE s1 CURSOR FOR  
 	              SELECT Id, [Name] FROM tblEmployee; 
 	OPEN s1; 
 	FETCH Next from s1 INTO @ID,@Name
